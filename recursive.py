@@ -29,6 +29,11 @@ Data = [[0, "abc", 1],
 
 index2parent_list = []
 
+# inputs of this recursive function are an 2-d array (list)
+# and the length of this array (int)
+# this function recursively traveses the array
+# then add a pair of key/value consisting every 
+# node's ID and PARENT to a pre-defiened list (index2parent_list)
 def f(sequence: list, seqLen: int):# -> None
     if seqLen == 1:
         thisElement = sequence[0] # Because the sequence is a 2-dimensional array
